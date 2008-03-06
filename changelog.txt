@@ -1,0 +1,24 @@
+PolyPage Change Log
+
+0.4
+
+* Fixed a major bug with cookies, all cookies are now scoped to the root of the domain. (thanks Nat)
+
+
+0.3
+
+* Added cookie support.
+* Wrapped the plugin in a closure.
+* Added MIT & GPL Licenses.
+
+
+0.2
+
+* Upgraded jQuery.
+* Fixed some false negative results.
+* Made the syntax slightly easier.
+
+
+0.1
+
+* Initial release.

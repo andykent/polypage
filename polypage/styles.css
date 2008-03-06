@@ -1,0 +1,26 @@
+#pp_options {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 5px;
+	font-size: 12px;
+	line-height: 1;
+	background: #f0f0f0;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+#pp_options ul {
+	margin: 0;
+	padding: 0;
+}
+#pp_options li {
+	display: inline;
+	padding: 0 .3em;
+	color
+}
+#pp_options li a {
+	color: #bbb;
+}
+#pp_options li a.active {
+	color: #000;
+}

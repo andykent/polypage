@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>PolyPage</title>
+	
+	<link rel="stylesheet" href="polypage/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<script src="polypage/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="polypage/cookie.jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="polypage/polypage.jquery.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$.polypage.init();
+		});
+	</script>
+	
+	<style type="text/css" media="screen">
+	
+		body {
+			font: 14px/1.4 normal Tahoma, Arial, Sans-Serif;
+		}
+
+		h1 {
+			margin: 0;
+			padding: 1em 0 0 0;
+			font-size: 3em;
+			text-align: center;
+		}
+
+		h2 {
+			margin: 2em 0 0 0;
+			padding: 0;
+			font-size: 1.4em;
+			line-height: 1.1;
+		}
+
+		#page {
+			position: relative;
+			width: 420px;
+			margin: 0 auto;
+			text-align: justify;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+
+<div id="page">
+	
+	<h1>Polypage</h1>
+
+	<h2>What&#39;s this all about?</h2>
+	<p>Polypage was designed to ease the process of showing multiple page states in html mock-ups. By adding simply adding class names to a document you can imply state and conditional view logic.</p>
+
+	<h2>How does it work?</h2>
+	<p>Any class names that you would like Polypage to process should begin with <code>pp_</code> Polypage will ignore all other classes in the document.</p>
+	<p>The <code>pp_</code> prefix is then followed by a state, this can be any page state that you wish to use, some examples; <code>logged_in</code>, <code>administrator</code>, <code>group_owner</code>, <code>blank_state</code>. A complete class name might look something like <code>pp_logged_in</code></p>
+	<p>When the page loads states are collected automatically from your used class names, because of this it is not necessary to tell Polypage what states you are using in a particular page.</p>
+	<p>States can be joined together and negated to add some basic logic to pages. The syntax for this follows natural language. Some examples; <code>pp_logged_in_and_admin</code>, <code>pp_not_logged_in</code>, <code>pp_admin_or_group_owner</code>.</p>
+	<p>The state of a page can be easily changed by toggling the state options on and off in the grey box in the top left corner of the window.</p>
+	<p>Polypage has support for defaults and persistence through several different means:</p>
+	<dl>
+		<dt>URL anchors</dt> 
+		<dd>These work the same as class names so building an anchor like #logged_in_and_admin would turn these two states on by default on page load.</dd>
+		<dt>Init options</dt>
+		<dd>Passing an array of states to the polypage.init() function will set default on states for the page.</dd>
+		<dt>Cookies</dt>
+		<dd>Cookie support relies on the jQuery cookie plugin, when this is present it is used to make choices persistent.
+			You can set a cookie from the server by setting 'polypage_option'='yes'</dd>
+	</ul>
+
+
+	<h2>Where can I see a demo?</h2>
+	<p>This page is using PolyPage! You may have noticed the options in the top right corner of this page. Try toggling them to see the text below change to reflect your choices.</p>
+	<ul>
+		<li>No Class</li>
+		<li class=" test_class pp_logged_in">pp_logged_in</li>
+		<li class="pp_not_logged_in other_test_class">pp_not_logged_in</li>
+		<li class="test_class pp_logged_in_or_admin other_test_class">pp_logged_in_or_admin</li>
+		<li class="pp_logged_in_and_admin">pp_logged_in_and_admin</li>
+		<li class="pp_not_logged_in_and_not_admin">pp_not_logged_in_and_not_admin</li>
+	</ul>
+	
+	<h2>Where can I get hold of it?</h2>
+	<p>You can <a href="packages/pp-0-4.zip">download the current version (0.4) here</a>.</p> 
+	<p>This version is still an early release and has only really been tested on Firefox &amp; Safari therefore please keep sending us your feedback and issues.<br />
+		Check-out the <a href="changelog.txt">changelog</a> for more details on what's new.</p>
+
+	<h2>What&#39;s next?</h2>
+	<ul>
+		<li>Alphabetical ordering of options in menu bar.</li>
+	</ul>
+
+</div>
+
+</body>
+</html>
