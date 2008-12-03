@@ -4,6 +4,8 @@ PolyPage Change Log
 
 * Safari 3 support.
 * Alphabetically sort states in the toggle list to avoid confusing users with changing orders across different pages. 
+* IE6 support
+* Anchor the toggles to the top of the html rather than the viewport
 
 
 0.4
