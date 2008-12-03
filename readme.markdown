@@ -1,5 +1,5 @@
-PolyPage																				by Andy Kent
-------------------------------------------------------------
+PolyPage
+========
 Polypage was designed to ease the process of showing 
 multiple page states in html mock-ups. 
 By adding simply adding class names to a document you can 
@@ -7,15 +7,14 @@ imply state and conditional view logic.
 
 
 BASIC USAGE
-------------------------------------------------------------
+-----------
 $(document).ready(function() {
 	$.polypage.init();
 });
 
 
 SETTINGS
-------------------------------------------------------------
-
+--------
 There aren't any!
 It just works. 
 
@@ -30,7 +29,6 @@ $.polypage.init([ 'logged_in', 'admin' ]);
 
 
 CONTRIBUTERS
-------------------------------------------------------------
+------------
 Andy Kent <andrew.d.kent@gmail.com>
 Natalie Downe <nat@natbat.net> (http://notes.natbat.net/)
-
