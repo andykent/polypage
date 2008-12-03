@@ -27,6 +27,9 @@ function like so...
 
 $.polypage.init([ 'logged_in', 'admin' ]);
 
+MORE INFO
+---------
+For more help and an example open the index.html file in a web browser.
 
 CONTRIBUTERS
 ------------
