@@ -59,6 +59,17 @@
 	<h2>What&#39;s this all about?</h2>
 	<p>Polypage was designed to ease the process of showing multiple page states in html mock-ups. By adding simply adding class names to a document you can imply state and conditional view logic.</p>
 
+  <h2>Where can I see a demo?</h2>
+	<p>This page is using PolyPage! You may have noticed the options in the top right corner of this page. Try toggling them to see the text below change to reflect your choices.</p>
+	<ul>
+		<li>No Class</li>
+		<li class=" test_class pp_logged_in">pp_logged_in</li>
+		<li class="pp_not_logged_in other_test_class">pp_not_logged_in</li>
+		<li class="test_class pp_logged_in_or_admin other_test_class">pp_logged_in_or_admin</li>
+		<li class="pp_logged_in_and_admin">pp_logged_in_and_admin</li>
+		<li class="pp_not_logged_in_and_not_admin">pp_not_logged_in_and_not_admin</li>
+	</ul>
+	
 	<h2>How does it work?</h2>
 	<p>Any class names that you would like Polypage to process should begin with <code>pp_</code> Polypage will ignore all other classes in the document.</p>
 	<p>The <code>pp_</code> prefix is then followed by a state, this can be any page state that you wish to use, some examples; <code>logged_in</code>, <code>administrator</code>, <code>group_owner</code>, <code>blank_state</code>. A complete class name might look something like <code>pp_logged_in</code></p>
@@ -74,23 +85,11 @@
 		<dt>Cookies</dt>
 		<dd>Cookie support relies on the jQuery cookie plugin, when this is present it is used to make choices persistent.
 			You can set a cookie from the server by setting 'polypage_option'='yes'</dd>
-	</ul>
-
-
-	<h2>Where can I see a demo?</h2>
-	<p>This page is using PolyPage! You may have noticed the options in the top right corner of this page. Try toggling them to see the text below change to reflect your choices.</p>
-	<ul>
-		<li>No Class</li>
-		<li class=" test_class pp_logged_in">pp_logged_in</li>
-		<li class="pp_not_logged_in other_test_class">pp_not_logged_in</li>
-		<li class="test_class pp_logged_in_or_admin other_test_class">pp_logged_in_or_admin</li>
-		<li class="pp_logged_in_and_admin">pp_logged_in_and_admin</li>
-		<li class="pp_not_logged_in_and_not_admin">pp_not_logged_in_and_not_admin</li>
-	</ul>
+	</dl>
 	
 	<h2>Where can I get hold of it?</h2>
 	<p>The source code is available on <a href="http://github.com/andykent/polypage">GitHub</a></p>
-	<p>This version is still an early release and has only really been tested on Firefox &amp; Safari therefore please keep sending us your feedback and issues.<br />
+	<p>This version is still an early release but is in regular use by several companies.
 		Check-out the <a href="changelog.txt">changelog</a> for more details on what's new.</p>
 
 	<h2>What&#39;s next?</h2>
