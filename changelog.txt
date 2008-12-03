@@ -1,5 +1,11 @@
 PolyPage Change Log
 
+0.5 (current development version)
+
+* Safari 3 support.
+* Alphabetically sort states in the toggle list to avoid confusing users with changing orders across different pages. 
+
+
 0.4
 
 * Fixed a major bug with cookies, all cookies are now scoped to the root of the domain. (thanks Nat)
