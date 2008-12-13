@@ -2,6 +2,7 @@ PolyPage Change Log
 
 0.5 (current development version)
 
+* Regex improvements
 * Support for numbers in state names.
 * Safari 3 support.
 * Alphabetically sort states in the toggle list to avoid confusing users with changing orders across different pages. 
