@@ -34,6 +34,12 @@ label option like this...
 
     $('body').polypage([], { label: 'My Label Here' });
 
+If you wish to change the class prefix from 'pp' this is possible
+by setting the 'prefix' option...
+
+    $('body').polypage([], { prefix: 'MyPrefix' });
+    // class names should now look like "MyPrefix_logged_in_and_admin"
+
 MORE INFO
 ---------
 For more help and an example open the index.html file in a web browser.

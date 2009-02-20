@@ -8,11 +8,13 @@ PolyPage Change Log
 * Added a customizable label to make it clear the toggles are page states, use the 'label' option to change. (Thanks to Phil Oye)
 * Increased the specificity of the CSS selectors so they are unlikely to be affected by other page styling.
 * If no PolyPage elements exist on a page then we now avoid adding an empty toggle box to the page. (thanks to Phil Oye for the suggestion)
+* The 'pp' classname prefix can now be changed via the 'prefix' option.
 
 0.5.1
 
 * Upgraded to work with jQuery 1.3.x
 * Fixed a CSS typo
+
 
 0.5
 
