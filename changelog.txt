@@ -7,6 +7,7 @@ PolyPage Change Log
 * Fixes a bug where setting a cookie and a hash in the url to both be on would cause an infinite loop of toggling.
 * Added a customizable label to make it clear the toggles are page states, use the 'label' option to change. (Thanks to Phil Oye)
 * Increased the specificity of the CSS selectors so they are unlikely to be affected by other page styling.
+* If no PolyPage elements exist on a page then we now avoid adding an empty toggle box to the page. (thanks to Phil Oye for the suggestion)
 
 0.5.1
 

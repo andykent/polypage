@@ -42,3 +42,4 @@ CONTRIBUTERS
 ------------
 Andy Kent <andy.kent@me.com> (http://adkent.com/)
 Natalie Downe <nat@natbat.net> (http://notes.natbat.net/)
+Phil Oye <philoye@philoye.com> (http://philoye.com)
