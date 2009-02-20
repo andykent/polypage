@@ -1,8 +1,10 @@
 PolyPage Change Log
 
-0.6 (dev)
+0.6.0 (dev)
 
 * PolyPage can now be intialized on a jQuery collection using the $(selector).polypage() syntax. the matched elements are used as the container for the navigation controls. This is now the recommended way to initialize jQuery although the $.polypage.init() method still works for backwards compatibility at the moment.
+* Some refactoring of cookie support and setState();
+* Fixes a bug where setting a cookie and a hash in the url to both be on would cause an infinite loop of toggling.
 
 
 0.5.1
