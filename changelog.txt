@@ -1,6 +1,11 @@
 PolyPage Change Log
 
-0.5 (current development version)
+0.5.1
+
+* Upgraded to work with jQuery 1.3.x
+* Fixed a CSS typo
+
+0.5
 
 * Regex improvements
 * Support for numbers in state names.
