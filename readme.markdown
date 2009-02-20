@@ -9,7 +9,7 @@ imply state and conditional view logic.
 BASIC USAGE
 -----------
     $(document).ready(function() {
-    	$.polypage.init();
+    	$('body').polypage();
     });
 
 
@@ -19,13 +19,15 @@ There aren't any!
 It just works. 
 
 Having said that feel free to modify the css styling to work 
-with your wireframes.
+with your wireframes. The initial jQuery collection (the 'body'
+element in these examples) is used to decide where the toggle
+bar is appended to in the source code.
 
 If you want to force a state to be active when the page 
 loads then you can pass it in as an Array to the init 
 function like so...
 
-    $.polypage.init([ 'logged_in', 'admin' ]);
+    $('body').polypage([ 'logged_in', 'admin' ]);
 
 MORE INFO
 ---------

@@ -1,5 +1,9 @@
 PolyPage Change Log
 
+0.6
+
+* PolyPage can now be intialized on a jQuery collection using the $(selector).polypage() syntax. the matched elements are used as the container for the navigation controls. This is now the recommended way to initialize jQuery although the $.polypage.init() method still works for backwards compatibility at the moment.
+
 0.5.1
 
 * Upgraded to work with jQuery 1.3.x
