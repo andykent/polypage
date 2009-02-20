@@ -2,10 +2,10 @@ PolyPage Change Log
 
 0.6.0 (dev)
 
-* PolyPage can now be intialized on a jQuery collection using the $(selector).polypage() syntax. the matched elements are used as the container for the navigation controls. This is now the recommended way to initialize jQuery although the $.polypage.init() method still works for backwards compatibility at the moment.
+* PolyPage can now be intialized on a jQuery collection using the $(selector).polypage() syntax. the matched elements are used as the container for the navigation controls. This is now the recommended way to initialize jQuery although the $.polypage.init() method still works for backwards compatibility at the moment. (Thanks to Phil Oye)
 * Some refactoring of cookie support and setState();
 * Fixes a bug where setting a cookie and a hash in the url to both be on would cause an infinite loop of toggling.
-* Added a label to make it clear the toggles are page states.
+* Added a customizable label to make it clear the toggles are page states, use the 'label' option to change. (Thanks to Phil Oye)
 * Increased the specificity of the CSS selectors so they are unlikely to be affected by other page styling.
 
 0.5.1

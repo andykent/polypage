@@ -15,8 +15,8 @@ BASIC USAGE
 
 SETTINGS
 --------
-There aren't any!
-It just works. 
+There aren't many!
+It mostly just works. 
 
 Having said that feel free to modify the css styling to work 
 with your wireframes. The initial jQuery collection (the 'body'
@@ -27,7 +27,12 @@ If you want to force a state to be active when the page
 loads then you can pass it in as an Array to the init 
 function like so...
 
-    $('body').polypage([ 'logged_in', 'admin' ]);
+    $('body').polypage([ 'logged_in', 'admin' ]);    
+
+If you want to set a custom label it can be done using the
+label option like this...
+
+    $('body').polypage([], { label: 'My Label Here' });
 
 MORE INFO
 ---------

@@ -11,8 +11,7 @@ body div#pp_options {
 }
 body div#pp_options p {
   display: inline;
-  color: #999;
-  font-style: italic;
+  color: #bbb;  
 }
 body div#pp_options ul {
   display: inline;
@@ -24,7 +23,7 @@ body div#pp_options li {
 	padding: 0 .3em;
 }
 body div#pp_options li a {
-	color: #bbb;
+	color: #999;
 }
 body div#pp_options li a.active {
 	color: #000;
