@@ -1,4 +1,4 @@
-#pp_options {
+body div#pp_options {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -9,17 +9,23 @@
 	border-left: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 }
-#pp_options ul {
+body div#pp_options p {
+  display: inline;
+  color: #999;
+  font-style: italic;
+}
+body div#pp_options ul {
+  display: inline;
 	margin: 0;
 	padding: 0;
 }
-#pp_options li {
+body div#pp_options li {
 	display: inline;
 	padding: 0 .3em;
 }
-#pp_options li a {
+body div#pp_options li a {
 	color: #bbb;
 }
-#pp_options li a.active {
+body div#pp_options li a.active {
 	color: #000;
 }
