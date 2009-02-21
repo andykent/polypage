@@ -9,6 +9,8 @@ PolyPage Change Log
 * Increased the specificity of the CSS selectors so they are unlikely to be affected by other page styling.
 * If no PolyPage elements exist on a page then we now avoid adding an empty toggle box to the page. (thanks to Phil Oye for the suggestion)
 * The 'pp' classname prefix can now be changed via the 'prefix' option.
+* The classname separator can now be changed via the 'separator' option. 
+
 
 0.5.1
 

@@ -40,6 +40,12 @@ by setting the 'prefix' option...
     $('body').polypage([], { prefix: 'MyPrefix' });
     // class names should now look like "MyPrefix_logged_in_and_admin"
 
+Even the whitespace separator can be changed using the 'separator'
+option (note only single characters work at the moment)... 
+
+    $('body').polypage([], { separator: '-' });
+    // class names should now look like "pp-logged-in-and-admin"
+
 MORE INFO
 ---------
 For more help and an example open the index.html file in a web browser.
