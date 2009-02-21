@@ -50,6 +50,12 @@ MORE INFO
 ---------
 For more help and an example open the index.html file in a web browser.
 
+COMING SOON
+-----------
+- Keyboard shortcuts for toggling
+- An API for triggering state changes programatically
+- A snazzy new toggle box design
+
 CONTRIBUTERS
 ------------
 Andy Kent <andy.kent@me.com> (http://adkent.com/)
