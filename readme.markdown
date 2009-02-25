@@ -46,6 +46,21 @@ option (note only single characters work at the moment)...
     $('body').polypage([], { separator: '-' });
     // class names should now look like "pp-logged-in-and-admin"
 
+Toggling states from the document, is possible using various methods:
+
+    <a href="#logged_in">log in</a>
+    // and
+    <a href="#not_logged_in">log out</a>
+
+    // or inside a form
+    <form method="GET" action="#logged_in">
+    	<input type="submit">
+    </form>
+
+    // and from everywhere using: $.polypage.setState(/* String */name, /* Boolean */value)
+    <input type="checkbox" onchange="$.polypage.setState('logged_in', this.checked)">
+
+
 MORE INFO
 ---------
 For more help and an example open the index.html file in a web browser.
@@ -53,7 +68,6 @@ For more help and an example open the index.html file in a web browser.
 COMING SOON
 -----------
 - Keyboard shortcuts for toggling
-- An API for triggering state changes programatically
 - A snazzy new toggle box design
 
 CONTRIBUTERS
@@ -61,3 +75,4 @@ CONTRIBUTERS
 Andy Kent <andy.kent@me.com> (http://adkent.com/)
 Natalie Downe <nat@natbat.net> (http://notes.natbat.net/)
 Phil Oye <philoye@philoye.com> (http://philoye.com)
+Yoan Blanc <yoan@dosimple.ch> (http://yoan.dosimple.ch/)
