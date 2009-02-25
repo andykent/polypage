@@ -46,7 +46,7 @@ option (note only single characters work at the moment)...
     $('body').polypage([], { separator: '-' });
     // class names should now look like "pp-logged-in-and-admin"
 
-Toggling states from the document, is possible using various methods:
+Toggling states from the document is possible using various methods:
 
     <a href="#logged_in">log in</a>
     // and
