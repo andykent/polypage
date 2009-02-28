@@ -1,13 +1,21 @@
 body div#pp_options {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 5px;
-	font-size: 12px;
-	line-height: 1;
-	background: #f0f0f0;
-	border-left: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 12px;
+  line-height: 1;
+  background: #f0f0f0;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  overflow:hidden;
+}
+body div#pp_options .closer {
+  color: #999;
+  padding:5px;
+  margin-left:-4px;
+  text-decoration:none;
+  font-weight:bold;
 }
 body div#pp_options p {
   display: inline;
@@ -15,16 +23,20 @@ body div#pp_options p {
 }
 body div#pp_options ul {
   display: inline;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+}
+body div#pp_options.closed ul,
+body div#pp_options.closed p {
+  display: none;
 }
 body div#pp_options li {
-	display: inline;
-	padding: 0 .3em;
+  display: inline;
+  padding: 0 .3em;
 }
 body div#pp_options li a {
-	color: #999;
+  color: #999;
 }
 body div#pp_options li a.active {
-	color: #000;
+  color: #000;
 }
