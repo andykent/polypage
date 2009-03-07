@@ -4,6 +4,7 @@ PolyPage Change Log
 0.7 [dev]
 
 * Officially note the MooTools branch.
+* Added a test suite around the public API, this was long overdue, sorry.
 
 
 0.6

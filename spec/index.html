@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Polypage Test Suite</title>
+	
+  <!-- Screw Unit Requirements -->
+	<script src="../lib/jquery.js"></script>
+  <script src="screw-unit/jquery.fn.js"></script>
+  <script src="screw-unit/jquery.print.js"></script>
+  <script src="screw-unit/screw.builder.js"></script>
+  <script src="screw-unit/screw.matchers.js"></script>
+  <script src="screw-unit/screw.events.js"></script>
+  <script src="screw-unit/screw.behaviors.js"></script>
+  <link rel="stylesheet" href="screw-unit/screw.css">
+  
+  <!-- Custom Matchers -->
+  <script src="matchers.js"></script>
+  
+  <!-- PolyPage Requirements -->
+  <script src="../lib/cookie.jquery.js"></script>
+  <script src="../lib/polypage.jquery.js"></script>
+</head>
+
+<body>
+
+  <ul id="underscored">
+    <li>No Class</li>
+    <li class=" test_class pp_logged_in">pp_logged_in</li>
+    <li class="pp_not_logged_in other_test_class">pp_not_logged_in</li>
+    <li class="test_class pp_logged_in_or_admin other_test_class">pp_logged_in_or_admin</li>
+    <li class="pp_logged_in_and_admin">pp_logged_in_and_admin</li>
+    <li class="pp_not_logged_in_and_not_admin">pp_not_logged_in_and_not_admin</li>
+  </ul>
+  
+  <ul id="dashed">
+    <li>No Class</li>
+    <li class=" test-class pp-logged-in">pp-logged-in</li>
+    <li class="pp-not-logged-in other-test-class">pp-not-logged-in</li>
+    <li class="test-class pp-logged-in-or-admin other-test-class">pp-logged-in-or-admin</li>
+    <li class="pp-logged-in-and-admin">pp-logged-in-and-admin</li>
+    <li class="pp-not-logged-in-and-not-admin">pp-not-logged-in-and-not-admin</li>
+  </ul>
+  
+  <!-- Setup -->
+  <script type="text/javascript" charset="utf-8">
+      $('body').polypage();
+  </script>
+  
+  <!-- Specs -->
+  <script src="public-api-spec.js"></script>
+</body>
+</html>
