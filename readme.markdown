@@ -50,6 +50,8 @@ MORE INFO
 ---------
 For more help and an example open the index.html file in a web browser.
 
+If you would prefer be using MooTools instead of jQuery then for the moment you really should checkout cheeaun's fork http://github.com/cheeaun/polypage which contains lots of MooTools goodness.
+
 COMING SOON
 -----------
 - Keyboard shortcuts for toggling
@@ -58,6 +60,7 @@ COMING SOON
 
 CONTRIBUTERS
 ------------
-Andy Kent <andy.kent@me.com> (http://adkent.com/)
-Natalie Downe <nat@natbat.net> (http://notes.natbat.net/)
+Andy Kent <andy.kent@me.com> (http://adkent.com)
+Natalie Downe <nat@natbat.net> (http://notes.natbat.net)
 Phil Oye <philoye@philoye.com> (http://philoye.com)
+Lim Chee Aun <cheeaun@gmail.com> (http://cheeaun.com)
