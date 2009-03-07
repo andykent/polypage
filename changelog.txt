@@ -1,10 +1,12 @@
 PolyPage Change Log
 
 
-0.7 [dev]
+0.7
 
 * Officially note the MooTools branch.
 * Added a test suite around the public API, this was long overdue, sorry.
+* Pulled in some of Yoan's changes to allow #state tiggering on 'a' and 'form' elements.
+* Started a skins folder based on Rich's suggestion, if you've got any good ones I would love to have them in the repo.
 
 
 0.6
