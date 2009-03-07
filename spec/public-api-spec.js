@@ -55,5 +55,31 @@ Screw.Unit(function() {
         expect('.pp_admin').to(be_visible);
       });
     });
+    
+    describe("fired events", function() {
+      it("fires 'pp_stateChanged' everytime a page state changes (via toggling)", function() {
+        $('#dom').trigger('pp_setState', {logged_in:false});
+        var data = false;
+        $('#dom').bind('pp_stateChange', function(e, obj) { data = obj });
+        $('#dom').trigger('pp_toggleStates', 'logged_in');
+        expect(data).to(equal, {name:'logged_in', value:true});
+      });
+      
+      it("fires 'pp_stateChanged' everytime a page state changes (via switching)", function() {
+        $('#dom').trigger('pp_setState', {logged_in:true});
+        var data = false;
+        $('#dom').bind('pp_stateChange', function(e, obj) { data = obj });
+        $('#dom').trigger('pp_setState', {logged_in:false});
+        expect(data).to(equal, {name:'logged_in', value:false});
+      });
+      
+      it("doesn't fire 'pp_stateChanged' if the state hasn't changed", function() {
+        $('#dom').trigger('pp_setState', {logged_in:true});
+        var data = false;
+        $('#dom').bind('pp_stateChange', function(e, obj) { data = true });
+        $('#dom').trigger('pp_setState', {logged_in:true});
+        expect(data).to(be_false);
+      });
+    });
   });
 });
