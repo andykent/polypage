@@ -1,5 +1,8 @@
 PolyPage Change Log
 
+0.9 [dev]
+
+- REFACTORING IN PRGRESS!
 
 0.7
 
