@@ -23,31 +23,40 @@
   <!-- PolyPage Requirements -->
   <script src="../lib/cookie.jquery.js"></script>
   <script src="../lib/polypage.jquery.js"></script>
+  
+  <style type="text/css" media="screen">
+    #dom {
+      position: absolute;
+      left: -1000em;
+    }
+  </style>
 </head>
 
 <body>
+  <div id="dom">
+    <ul id="underscored">
+      <li>No Class</li>
+      <li class=" test_class pp_logged_in">pp_logged_in</li>
+      <li class="pp_not_logged_in other_test_class">pp_not_logged_in</li>
+      <li class="test_class pp_logged_in_or_admin other_test_class">pp_logged_in_or_admin</li>
+      <li class="pp_logged_in_and_admin">pp_logged_in_and_admin</li>
+      <li class="pp_not_logged_in_and_not_admin">pp_not_logged_in_and_not_admin</li>
+    </ul>
 
-  <ul id="underscored">
-    <li>No Class</li>
-    <li class=" test_class pp_logged_in">pp_logged_in</li>
-    <li class="pp_not_logged_in other_test_class">pp_not_logged_in</li>
-    <li class="test_class pp_logged_in_or_admin other_test_class">pp_logged_in_or_admin</li>
-    <li class="pp_logged_in_and_admin">pp_logged_in_and_admin</li>
-    <li class="pp_not_logged_in_and_not_admin">pp_not_logged_in_and_not_admin</li>
-  </ul>
+    <ul id="dashed">
+      <li>No Class</li>
+      <li class=" test-class pp-logged-in">pp-logged-in</li>
+      <li class="pp-not-logged-in other-test-class">pp-not-logged-in</li>
+      <li class="test-class pp-logged-in-or-admin other-test-class">pp-logged-in-or-admin</li>
+      <li class="pp-logged-in-and-admin">pp-logged-in-and-admin</li>
+      <li class="pp-not-logged-in-and-not-admin">pp-not-logged-in-and-not-admin</li>
+    </ul>
+  </div>
   
-  <ul id="dashed">
-    <li>No Class</li>
-    <li class=" test-class pp-logged-in">pp-logged-in</li>
-    <li class="pp-not-logged-in other-test-class">pp-not-logged-in</li>
-    <li class="test-class pp-logged-in-or-admin other-test-class">pp-logged-in-or-admin</li>
-    <li class="pp-logged-in-and-admin">pp-logged-in-and-admin</li>
-    <li class="pp-not-logged-in-and-not-admin">pp-not-logged-in-and-not-admin</li>
-  </ul>
   
   <!-- Setup -->
   <script type="text/javascript" charset="utf-8">
-      $('body').polypage();
+      $('#dom').polypage();
   </script>
   
   <!-- Specs -->
