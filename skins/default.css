@@ -26,7 +26,7 @@ body div#pp_options li {
 body div#pp_options li a {
 	color: #999;
 }
-body div#pp_options li a.active {
+body div#pp_options li a.on {
 	color: #000;
 	background: #d4fb78;
 }

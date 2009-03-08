@@ -6,6 +6,7 @@ PolyPage Change Log
 - A public event API for triggering page state changes and being notified of them.
 - The plugin now is a real JS object so theoretically you could have several PolyPage's co-existing on one html page.
 - PolyPage now follows the jQuery standard and is fully chainable, and scoped, in most cases $(document).polypage() is fine.
+- The nav bar is now 100% independent of the polypage functionality. You can now run polypage with no GUI or DOM injection at all.
 
 0.7
 
