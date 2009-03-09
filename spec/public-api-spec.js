@@ -117,5 +117,15 @@ Screw.Unit(function() {
         expect('.pp_logged_in').to(be_hidden);
       });
     });
+    
+    describe("triggering pp_toggleState events via form action attributes", function() {
+      it("binds to submit events on forms and toggles with pp_toggle_logged_in", function() {
+        $('#dom').trigger('pp_setState', { logged_in:false });
+        $('form#toggle_logged_in_form').submit();
+        expect('.pp_logged_in').to(be_visible);
+        $('form#toggle_logged_in_form').submit();
+        expect('.pp_logged_in').to(be_hidden);
+      });
+    });
   });
 });

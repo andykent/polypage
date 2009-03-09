@@ -27,8 +27,8 @@
   
   <style type="text/css" media="screen">
     #dom {
-      position: absolute;
-      left: -1000em;
+/*      position: absolute;*/
+/*      left: -1000em;*/
     }
   </style>
 </head>
@@ -39,6 +39,10 @@
     <a id="toggle_logged_in_link" href="#pp_toggle_logged_in"><strong>Log In Toggle</strong></a>
     <a id="set_logged_in_true_link" href="#pp_set_logged_in_true"><strong>Log In</strong></a>
     <a id="set_logged_in_false_link" href="#pp_set_logged_in_false"><strong>Log Out</strong></a>
+    
+    <form id="toggle_logged_in_form" action="#pp_toggle_logged_in" method="get">
+      <p><input type="submit" value="Log in"/></p>
+    </form>
     
     <ul id="underscored">
       <li>No Class</li>
