@@ -67,11 +67,6 @@ For more help and an example open the index.html file in a web browser.
 
 If you would prefer be using MooTools instead of jQuery then for the moment you really should checkout cheeaun's fork http://github.com/cheeaun/polypage which contains lots of MooTools goodness.
 
-COMING SOON
------------
-- Keyboard shortcuts for toggling
-- A snazzy new toggle box design
-
 CONTRIBUTERS
 ------------
 - Andy Kent <andy.kent@me.com> (http://adkent.com)

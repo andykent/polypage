@@ -1,0 +1,31 @@
+PolyPage Ideas & WIP
+====================
+
+
+Refactoring
+-----------
+
+Make polypage more maintainable by separating out logic into chunks that use the jQuery event system to plug together.
+
+- Base: the core event system and bare essentials to get polypage working
+- GUI: the nav bar for pre-built GUI interactions
+- Events: some default event handlers for taking care of polypage formatted click and submit events automagically
+- Cookies: cookie support
+- Keyboard: keyboard shortcut support for event toggling 
+- others?...
+
+This architecture should make it easy to maintain different features independently and make end user extensions / customisation much easier.
+
+The $(el).polypage() function will become a wrapper which gives you a default set of extensions out of the box. For more advanced usage the syntax could be something like...
+
+$(baseEl).ppBase(opts)
+$(guiEl).ppGUI(baseEl, opts)
+$(eventEl).ppEvents(baseEl, opts)
+$.ppCookies(baseEl, opts)
+
+
+Other Ideas
+-----------
+
+- Collect a great bunch of skins for the GUI that can ship with the polypage
+- Get a decent website up with some proper examples and links to the latest stable version
