@@ -1,23 +1,23 @@
 Screw.Unit(function() {
-  describe("PolyPage Nav Bar Extension", function() {
+  describe("PolyPage GUI Extension", function() {
     describe("redrawing", function() {
-      it("fires a pp_navBarRedrawBegin event when redrawing begins", function() {
+      it("fires a pp_gui_redrawBegin event when redrawing begins", function() {
         var redraw = false;
-        $('body').bind('pp_navBarRedrawBegin', function(e) { redraw = true });
-        $('body').data('polypageNavBar').redraw();
+        $('#dom').bind('pp_gui_redrawBegin', function(e) { redraw = true });
+        $('#dom').data('ppGUI').redraw();
         expect(redraw).to(be_true);
       });
       
-      it("fires a pp_navBarRedrawComplete event when redrawing finishes", function() {
+      it("fires a pp_gui_redrawComplete event when redrawing finishes", function() {
         var redraw = false;
-        $('body').bind('pp_navBarRedrawComplete', function(e) { redraw = true });
-        $('body').data('polypageNavBar').redraw();
+        $('#dom').bind('pp_gui_redrawComplete', function(e) { redraw = true });
+        $('#dom').data('ppGUI').redraw();
         expect(redraw).to(be_true);
       });
       
       it("redraws when a page state changes", function() {
         var redraw = false;
-        $('body').bind('pp_navBarRedrawBegin', function(e) { redraw = true });
+        $('#dom').bind('pp_gui_redrawBegin', function(e) { redraw = true });
         $('#dom').trigger('pp_toggleState', 'logged_in');
         expect(redraw).to(be_true);
       });
