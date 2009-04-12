@@ -1,12 +1,13 @@
 PolyPage Change Log
 
-0.8 [dev]
+0.8
 
-- REFACTORING IN PRGRESS! (no GUI yet, amongst other things)
+- This release is a big refactoring to split the PolyPage logic into a Base library and series of smaller modules.
 - A public event API for triggering page state changes and being notified of them.
 - The plugin now is a real JS object so theoretically you could have several PolyPage's co-existing on one html page.
 - PolyPage now follows the jQuery standard and is fully chainable, and scoped, in most cases $(document).polypage() is fine.
-- The nav bar is now 100% independent of the polypage functionality. You can now run polypage with no GUI or DOM injection at all.
+- The GUI, Event bindings and Cookie support is now 100% independent of the polypage Base functionality. You can now run polypage with no GUI or DOM injection at all.
+- A decent amount of high level test coverage on the key components.
 
 0.7
 
