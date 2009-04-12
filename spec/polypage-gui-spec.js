@@ -1,5 +1,5 @@
 Screw.Unit(function() {
-  describe("PolyPage GUI Extension", function() {
+  describe("PolyPage GUI", function() {
     describe("redrawing", function() {
       it("fires a pp_gui_redrawBegin event when redrawing begins", function() {
         var redraw = false;
