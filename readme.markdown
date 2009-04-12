@@ -8,62 +8,95 @@ imply state and conditional view logic.
 
 BASIC USAGE
 -----------
+
+Initialise PolyPage...
+
     $(document).ready(function() {
     	$('body').polypage();
     });
 
+Use stateful class names in your html...
 
-SETTINGS
---------
-There aren't many!
-It mostly just works. 
+    <li class="pp_admin">pp_admin</li>
+    <li class="pp_not_logged_in other_test_class">pp_not_logged_in</li>
+    <li class="test_class pp_logged_in_or_admin other_test_class">pp_logged_in_or_admin</li>
+    <li class="pp_logged_in_and_admin">pp_logged_in_and_admin</li>
+    <li class="pp_not_logged_in_and_not_admin">pp_not_logged_in_and_not_admin</li>
 
-Having said that feel free to modify the css styling to work 
-with your wireframes. The initial jQuery collection (the 'body'
-element in these examples) is used to decide where the toggle
-bar is appended to in the source code.
+Use special href attributes to trigger state changes if required...
 
-If you want to force a state to be active when the page 
-loads then you can pass it in as an Array to the init 
-function like so...
+    <a href="#pp_toggle_logged_in">Log In Toggle</a>
+    <a href="#pp_set_logged_in_true">Log In</a>
+    <a href="#pp_set_logged_in_false">Log Out</a>
 
-    $('body').polypage([ 'logged_in', 'admin' ]);    
 
-If you want to set a custom label it can be done using the
-label option like this...
+Use special form actions to trigger state changes if required...
 
-    $('body').polypage([], { label: 'My Label Here' });
-
-If you wish to change the class prefix from 'pp' this is possible
-by setting the 'prefix' option...
-
-    $('body').polypage([], { prefix: 'MyPrefix' });
-    // class names should now look like "MyPrefix_logged_in_and_admin"
-
-Even the whitespace separator can be changed using the 'separator'
-option (note only single characters work at the moment)... 
-
-    $('body').polypage([], { separator: '-' });
-    // class names should now look like "pp-logged-in-and-admin"
-
-Toggling states from the document is possible using various methods:
-
-    <a href="#logged_in">log in</a>
-    // and
-    <a href="#not_logged_in">log out</a>
-
-    // or inside a form
-    <form method="GET" action="#logged_in">
-    	<input type="submit">
+    <form action="#pp_toggle_logged_in" method="get">
+      <input type="submit" value="Log in"/>
     </form>
 
-    // and from everywhere using: $.polypage.setState(String name, Boolean value)
-    <input type="checkbox" onchange="$.polypage.setState('logged_in', this.checked)">
+
+API
+---
+
+PolyPage makes extensive use of custom events and triggering/binding to these is the recommended way of interacting with page states programatically. Here are some examples (which assume you have bound polypage to the 'body')...
+
+Toggle the logged in state...
+
+    $('body').trigger('pp_toggleState', 'logged_in');
+
+Set the logged in state...
+
+    $('body').trigger('pp_setState', { logged_in:true });
+
+Set the logged in state...
+
+    $('body').trigger('pp_setState', { logged_in:true });
+
+Listen for state changes...
+
+    $('body').bind('pp_stateChange', function(e, state) { 
+      alert("state "+ state.name + " changed to " + state.value); 
+    });
+
+See the specs for some more examples.
+
+ADVANCED USAGE
+--------------
+
+Under the hood PolyPage is logically separated into a core library and several extensions. The currently implemented extensions are...
+
+- Base: the core event system and bare essentials to get polypage working
+- GUI: the nav bar for pre-built GUI interactions
+- Events: some default event handlers for taking care of polypage formatted click and submit events automagically
+- Cookies: cookie support for maintaining state across pages
+
+Full documentation for all of the extensions will be coming soon but for now you can see the source code for available options.
+
+Some usage examples
+----------------------
+
+Starting PolyPage without cookie support or Event helpers...
+
+    $('body').polypage({ cookie:false, events:false });
+
+
+Starting PolyPage with a 2 day cookie expiry a 'ux' prefix and no Event helpers...
+
+    $('body').polypage({ cookie:{ expires:2 }, base:{ prefix:'ux' }, events:false });
+
+Roll your own PolyPage! if you want to completely customise PolyPage then you can break away from using the polypage() function and initialize the individual components yourself...
+
+    $(el).ppBase(opts);
+    $(el).ppEvents(opts);
+    $(el).ppGUI(opts);
+    $(el).ppCookie(opts);
 
 
 MORE INFO
 ---------
-For more help and an example open the index.html file in a web browser.
+For an example open the index.html file in a web browser.
 
 If you would prefer be using MooTools instead of jQuery then for the moment you really should checkout cheeaun's fork http://github.com/cheeaun/polypage which contains lots of MooTools goodness.
 
