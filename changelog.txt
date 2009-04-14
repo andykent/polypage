@@ -1,5 +1,13 @@
 PolyPage Change Log
 
+
+0.8.1
+
+- Readme updates.
+- extensions now take a 'polypage' option to assist with custom bindings.
+- API Change, ppbase options are now passed in via $(el).polypage({ base: {} }); so it is inline with other extensions.
+
+
 0.8
 
 - This release is a big refactoring to split the PolyPage logic into a Base library and series of smaller modules.
@@ -8,6 +16,7 @@ PolyPage Change Log
 - PolyPage now follows the jQuery standard and is fully chainable, and scoped, in most cases $(document).polypage() is fine.
 - The GUI, Event bindings and Cookie support is now 100% independent of the polypage Base functionality. You can now run polypage with no GUI or DOM injection at all.
 - A decent amount of high level test coverage on the key components.
+
 
 0.7
 
