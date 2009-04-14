@@ -71,6 +71,7 @@ Under the hood PolyPage is logically separated into a core library and several e
 - GUI: the nav bar for pre-built GUI interactions
 - Events: some default event handlers for taking care of polypage formatted click and submit events automagically
 - Cookies: cookie support for maintaining state across pages
+- Keyboard: Keyboard shortcuts for toggling states via "ALT + first_letter_of_state_name"
 
 Full documentation for all of the extensions will be coming soon but for now you can see the source code for available options.
 
@@ -92,6 +93,7 @@ Roll your own PolyPage! if you want to completely customise PolyPage then you ca
     $(el).ppEvents(opts);
     $(el).ppGUI(opts);
     $(el).ppCookie(opts);
+    $(el).ppKeyboard(opts);
 
 
 MORE INFO
