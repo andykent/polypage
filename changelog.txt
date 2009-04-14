@@ -1,6 +1,11 @@
 PolyPage Change Log
 
 
+0.8.3
+
+- Split extensions out into seperate files to make mix'n'match easier.
+
+
 0.8.2
 
 - Fixed a regression which broke alphabetical sorting.
