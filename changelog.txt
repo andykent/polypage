@@ -1,6 +1,13 @@
 PolyPage Change Log
 
 
+0.8.2
+
+- Fixed a regression which broke alphabetical sorting.
+- Added a new extension to handle keyboard shortcuts. (ALT + first_char_in_state_name toggles the state)
+- Added a friendly error message when you have syntax errors in class names.
+
+
 0.8.1
 
 - Readme updates.
