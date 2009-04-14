@@ -3,7 +3,8 @@ PolyPage Change Log
 
 0.8.3
 
-- Split extensions out into seperate files to make mix'n'match easier.
+- Split extensions out into separate files to make mix'n'match easier.
+- Extensions are now auto loaded into the $(el).polypage() function when they are available.
 
 
 0.8.2
