@@ -1,6 +1,12 @@
 PolyPage Change Log
 
 
+0.9 [dev]
+
+- Some performance improvements.
+- Provide hooks for custom show/hide animations via base:{ show:func, hide:func }
+
+
 0.8.3
 
 - Split extensions out into separate files to make mix'n'match easier.
