@@ -1,10 +1,11 @@
 PolyPage Change Log
 
 
-0.9 [dev]
+0.9
 
 - Some performance improvements.
 - Provide hooks for custom show/hide animations via base:{ show:func, hide:func }
+- options for ppBase now go on the root object... {base:{opts}} becomes {opts}
 
 
 0.8.3

@@ -1,90 +1,74 @@
-html {
-  padding: 0.5em;
-  font-family: Georgia, serif;
-  background: #EDEBD5;
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  list-style: none;
+  font-size: 1em;
 }
 
-  li {
-    list-style-type: none;
-  }
+body {
+  background: #fff;
+  color:  #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Sans-Serif";
+  font-size: 78.5%;
+  padding-top: 3em;
+}
 
-  .focused {
-    background-color: #F4F2E4;
-  }
+h3.status {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0 0 1em 0;
+  padding: .75em;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #3875d7;
+  font-weight: normal;
+  -webkit-box-shadow: 0px 1px 5px #666;
+  -moz-box-shadow: 0px 2px 3px #999;
+}
 
-    .focused * {
-      opacity: 1.0;
-    }
+ul {
+  margin: .5em 0;
+  padding: 0 1em;
+}
 
-  h1, h2, p {
-    opacity: 0.4;
-  }
+h1 {
+  margin: 0 1em;
+  padding: .25em 0;
+  border-bottom: 1px dotted #ccc;
+  font-weight: bold;
+}
 
-  .describes {
-    padding-left: 0;
-  }
+h2 {
+  padding: .2em .5em;
+  color: #ccc;
+}
 
-    .describes h1 {
-      font-size: 1.1em;
-      color: #877C21;
-      line-height: 1.8em;
-      margin: 0pt 0pt 0.6em;
-      border-bottom: 1px solid transparent;
-    }
+.enqueued h2 {
+  color: #999;
+}
 
-      .describes h1:hover {
-        cursor: pointer;
-        color: #000;
-        background-color: #F4F2E4;
-        border-bottom: 1px solid #9A8E51;
-      }
+.passed h2 {
+  color: #333;
+  background: #abffa5;
+  border-top: 2px solid #ccffcc;
+  border-bottom: 2px solid #66ff66;
+}
 
-    .describes .describe {
-      margin-left: 0.6em;
-      padding-left: 0.6em;
-      border: 1px dashed grey;
-    }
+.failed h2 {
+  color: #333;
+  background: #ffaaaa;
+  border-top: 2px solid #ffcccc;
+  border-bottom: 2px solid #ff9977;
+}
 
-      .describes .describe .its {}
-
-        .describes .describe .its .it {
-          list-style-type: lower-roman;
-          list-style-position: outside;
-        }
-
-          .describes .describe .its .it h2 {
-            font-weight: normal;
-            font-style: italic;
-            padding-left: 0.5em;
-            font-size: 1.0em;
-            color: #877C21;
-            line-height: 1.8em;
-            margin: 0 0 0.5em;
-            border-bottom: 1px solid transparent;
-          }
-          
-          .describes .describe .its .it.enqueued h2 {
-            background-color: #CC6600;
-            color: white !important;
-          }
-
-          .describes .describe .its .it.passed h2 {
-            background-color: #5A753D;
-            color: white !important;
-          }
-
-          .describes .describe .its .it.failed h2 {
-            background-color: #993300;
-            color: white !important;
-          }
-
-          .describes .describe .its .it.failed p {
-            margin-left: 1em;
-            color: #993300;
-          }
-          
-          .describes .describe .its .it h2:hover {
-            cursor: pointer;
-            color: #000 !important;
-            border-bottom: 1px solid #9A8E51;
-          }
+.error {
+  background-color: #f9f9f9;
+  margin-bottom: .5em;
+  padding: 1em;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
