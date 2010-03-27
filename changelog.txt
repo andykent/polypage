@@ -1,6 +1,11 @@
 PolyPage Change Log
 
 
+0.9.1
+
+- Fix default states.
+
+
 0.9
 
 - Some performance improvements.
